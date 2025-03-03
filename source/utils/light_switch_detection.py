@@ -5,7 +5,7 @@ from ultralytics import YOLO, YOLOWorld
 from ultralytics.data.dataset import YOLODataset
 import cv2
 import matplotlib.pyplot as plt
-from source.utils.object_detetion import BBox
+from utils.object_detetion import BBox
 
 
 def _filter_detections_YOLOWorld(detections):
