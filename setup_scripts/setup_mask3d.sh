@@ -57,7 +57,7 @@ docker run --gpus all -it \
     -e SPOTLIGHT="${SPOTLIGHT_DIR}" \
     -w "${SPOTLIGHT_DIR}/source/Mask3D" \
     rupalsaxena/mask3d_docker:latest \
-    -c "python mask3d.py --seed 42 --workspace ${SPOTLIGHT_DIR}/data/prescans/${HIGH_RES_NAME} && \
+    -c "python mask3d.py --seed 42 --workspace ${SPOTLIGHT_DIR}/data/prescans/${HIGH_RES_NAME} --pcd && \
                   chmod -R 777 ${SPOTLIGHT_DIR}/data/prescans/${HIGH_RES_NAME}"
 
 
